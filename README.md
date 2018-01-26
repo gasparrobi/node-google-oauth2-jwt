@@ -1,6 +1,5 @@
 # node-google-oauth2-jwt
-sample nodejs app with mongodb and passportjs authentication, (google-oauth2, jwt)
-
+sample nodejs app with mongodb database and passportjs for authentication using passport-google-oauth20 and jwt tokens.
 
 
 ## Prerequisites
