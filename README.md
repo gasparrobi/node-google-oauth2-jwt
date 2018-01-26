@@ -34,7 +34,7 @@ npm start
 
 Use [Postman](https://www.getpostman.com/) or any other api testing tool for the following section. 
 
-First we are going to make GET request to our google authentication endpoint ```/auth/google``` which will redirect the user to the google login page, after google successfully authenticates the user it will redirect to our callback endpoint with profile information like googleId, email etc... now we can save the user in the database and redirect to our auth-success endpoint ```/auth-success``` where we issue a jwt token.
+First we are going to make a GET request to our google authentication endpoint ```/auth/google``` which will redirect the user to the google login page. After google successfully authenticates the user it will redirect to our callback endpoint with the user's profile information such as googleId, email etc... now we can save the user in the database or retrieve existing user info and redirect to our auth-success endpoint ```/auth-success``` where we issue a jwt token.
 
 We can verify the token validity by making a GET request to the ```/verify``` endpoint. Don't forget to add the attach the authorization header to the request.
 
