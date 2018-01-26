@@ -1,0 +1,33 @@
+{
+  "name": "google-jwt-auth",
+  "version": "1.0.0",
+  "description": "sample code for node(express), passport(google-oauth2) + jwt token + mongoDB configuration",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Robert Gaspar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "connect-flash": "*",
+    "express": "^4.16.2",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "jsonwebtoken": "^8.1.1",
+    "mongodb": "*",
+    "mongoose": "*",
+    "passport": "^0.4.0",
+    "passport-google-oauth20": "^1.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^3.5.1",
+    "css-loader": "^0.28.8",
+    "nodemon": "^1.14.8",
+    "pushover-notifications": "^0.2.4",
+    "webpack": "^3.10.0"
+  }
+}
