@@ -38,7 +38,7 @@ First we are going to make a GET request to our google authentication endpoint `
 
 We can verify the token validity by making a GET request to the ```/verify``` endpoint. Don't forget to add the attach the authorization header to the request.
 
-```Authorization: Bearer <token>```
+![](https://github.com/gasparrobi/node-google-oauth2-jwt/blob/master/postman.png?raw=true)
 
 
 ## Useful beginner resources
