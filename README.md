@@ -1,6 +1,13 @@
 # node-google-oauth2-jwt
 sample nodejs api with mongodb database and passportjs for authentication using passport-google-oauth20 and jwt tokens.
 
+<img src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png" width=100>
+<img src="https://i.cloudup.com/zfY6lL7eFa-3000x3000.png" width=150>
+<img src="https://webassets.mongodb.com/_com_assets/cms/mongodb-logo-rgb-j6w271g1xn.jpg" width=200>
+<img src="https://cdn.glitch.com/project-avatar/0d184ee3-fd8d-4b94-acf4-b4e686e57375.png" width=100>
+<img src="https://cdn-images-1.medium.com/max/788/1*0G_7Ab6ZzUMEe-RDJnGjKQ.png" width=150>
+<img src="https://cdn.auth0.com/website/assets/pages/homepage/img/std_cert/oauth2-360e300bd3.svg" width=100>
+<img src="https://m.indoorfinders.com/img/btn_google_signin.png" width=150>
 
 ## Prerequisites
 

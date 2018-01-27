@@ -49,14 +49,14 @@ app.get('/auth/google', passport.authenticate('google', {
 }));
 
 // callback url upon successful google authentication
-app.get('/auth-success', passport.authenticate('google', {session: false}), async (req, res) => {
-    await authService.signToken(req, res);
+app.get('/auth-success', passport.authenticate('google', {session: false}), (req, res) => {
+    authService.signToken(req, res);
 });
 
 // route to check token with postman.
 // using middleware to check for authorization header
-app.get('/verify', authService.checkTokenMW, async (req, res) => {
-    await authService.verifyToken(req, res);
+app.get('/verify', authService.checkTokenMW, (req, res) => {
+    authService.verifyToken(req, res);
     if (null === req.authData) {
         res.sendStatus(403);
     } else {

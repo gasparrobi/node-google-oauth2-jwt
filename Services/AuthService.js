@@ -2,9 +2,9 @@ const jwt = require('jsonwebtoken');
 
 
 // check if Token exists on request Header and attach token to request as attribute
-exports.checkTokenMW = async (req, res, next) => {
+exports.checkTokenMW = (req, res, next) => {
     // Get auth header value
-    const bearerHeader = await req.headers['authorization'];
+    const bearerHeader = req.headers['authorization'];
     if (typeof bearerHeader !== 'undefined') {
         req.token = bearerHeader.split(' ')[1];
         next();
@@ -14,8 +14,8 @@ exports.checkTokenMW = async (req, res, next) => {
 };
 
 // Verify Token validity and attach token data as request attribute
-exports.verifyToken = async (req, res) => {
-    await jwt.verify(req.token, 'secretkey', async (err, authData) => {
+exports.verifyToken = (req, res) => {
+    jwt.verify(req.token, 'secretkey', (err, authData) => {
         if(err) {
             res.sendStatus(403);
         } else {
@@ -25,12 +25,12 @@ exports.verifyToken = async (req, res) => {
 };
 
 // Issue Token
-exports.signToken = async (req, res) => {
-    await jwt.sign({userId: req.user._id}, 'secretkey', {expiresIn:'5 min'}, async (err, token) => {
+exports.signToken = (req, res) => {
+    jwt.sign({userId: req.user._id}, 'secretkey', {expiresIn:'5 min'}, (err, token) => {
         if(err){
             res.sendStatus(500);
         } else {
-            await res.json({token});
+            res.json({token});
         }
     });
 }
