@@ -5,8 +5,6 @@ const User = mongoose.model('User');
 
 require('dotenv').config();
 
-//console.log(process.env);
-
 passport.use(
   new GoogleStrategy(
     {
