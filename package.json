@@ -18,17 +18,17 @@
     "express-messages": "*",
     "express-session": "*",
     "express-validator": "*",
-    "jsonwebtoken": "^8.1.1",
+    "jsonwebtoken": "^8.5.1",
     "mongodb": "^3.3.2",
     "mongoose": "^5.7.1",
-    "passport": "^0.4.0",
-    "passport-google-oauth20": "^1.0.0"
+    "passport": "^0.4.1",
+    "passport-google-oauth20": "^2.0.0"
   },
   "devDependencies": {
-    "concurrently": "^3.5.1",
-    "css-loader": "^0.28.8",
-    "nodemon": "^1.14.8",
-    "pushover-notifications": "^0.2.4",
-    "webpack": "^3.10.0"
+    "concurrently": "^5.1.0",
+    "css-loader": "^3.4.2",
+    "nodemon": "^2.0.2",
+    "pushover-notifications": "^1.2.2",
+    "webpack": "^4.41.5"
   }
 }

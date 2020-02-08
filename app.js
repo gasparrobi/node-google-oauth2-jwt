@@ -47,7 +47,9 @@ app.get(
   '/auth/google',
   passport.authenticate('google', {
     session: false,
-    scope: ['profile', 'email']
+    scope: ["profile", "email"],
+    accessType: "offline",
+    approvalPrompt: "force"
   })
 );
 
